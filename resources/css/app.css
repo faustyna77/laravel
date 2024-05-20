@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--bg-color, #fff);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card i {
+    font-size: 3rem;
+}
+
+.card h5 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.card p {
+    margin-top: 0.5rem;
+    color: #6b7280;
+}
+
+.grid-cols-1 .card {
+    margin-bottom: 1.5rem; /* Margines dolny dla pojedynczej kolumny */
+}
+
+@media (min-width: 768px) {
+    .grid-cols-3 .card {
+        margin-bottom: 0; /* Usunięcie marginesu dolnego dla większych ekranów */
+    }
+}
