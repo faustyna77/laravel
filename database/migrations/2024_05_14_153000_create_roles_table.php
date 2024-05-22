@@ -17,7 +17,7 @@ return new class extends Migration
             $table->timestamps();
         });
 
-        // Dodanie domyślnych ról
+        
         DB::table('roles')->insertOrIgnore([
             ['id' => 1, 'name' => 'admin'],
             ['id' => 2, 'name' => 'user'],
