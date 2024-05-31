@@ -12,7 +12,7 @@ class CourseController extends Controller
     public function index()
     {
         return view('courses.index', [
-            'courses' => Course::all()
+            'courses' => Course::all()//użyć metody +plus użytkowników 
         ]);
     }
 

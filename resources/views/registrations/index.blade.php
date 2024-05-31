@@ -22,7 +22,7 @@
                 <table class="table-auto w-full border-collapse border border-gray-300">
                     <thead>
                         <tr class="bg-gray-200 dark:bg-gray-700">
-                            <th class="px-4 py-2">#</th>
+                            
                             <th class="px-4 py-2">Identyfikator studenta</th>
                             <th class="px-4 py-2">Identyfikator kierunku/kursu</th>
                             <th class="px-4 py-2">Data rejestracji</th>

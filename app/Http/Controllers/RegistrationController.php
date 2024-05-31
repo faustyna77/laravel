@@ -10,11 +10,13 @@ use Illuminate\Support\Facades\Gate;
 class RegistrationController extends Controller
 {
     
+   
     public function index()
     {
-        return view('registrations.index', [
-            'registrations' => Registration::all()
-        ]);
+        // Pobierz wszystkie rejestracje z powiązanymi modelami studentów i kursów
+        $registrations = Registration::with(['student', 'course'])->get();
+
+        return view('registrations.index', compact('registrations'));
     }
 
     public function create()

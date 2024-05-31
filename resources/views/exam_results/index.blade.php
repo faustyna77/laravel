@@ -60,7 +60,7 @@
                 </tbody>
             </table>
             @if($exam_results->isEmpty())
-                <div class="px-5 py-5 border-t border-gray-200 bg-white text-sm text-center">Brak danych</div>
+                <div class="px-5 py-5 border-t border-black-200 bg-white text-sm text-center">Brak danych</div>
             @endif
         </div>
     </div>
